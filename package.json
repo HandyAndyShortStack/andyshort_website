@@ -1,7 +1,7 @@
 {
-  "name": "resume",
-  "version": "2.0.0",
-  "description": "my resume",
+  "name": "andyshort_website",
+  "version": "0.0.1",
+  "description": "my website",
   "main": "server.js",
   "dependencies": {
     "jade": "latest",
@@ -19,8 +19,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HandyAndyShortStack/resume.git"
+    "url": "git+https://github.com/HandyAndyShortStack/andyshort_website.git"
   },
   "author": "Andy Short",
-  "homepage": "http://andyshort.us"
+  "homepage": "http://andyshort.website"
 }
