@@ -11,7 +11,7 @@
     "cowsay": "latest"
   },
   "scripts": {
-    "watch:jade": "jade --watch jade/ --out build/",
+    "watch:jade": "jade --hierarchy --watch jade/ --out build/",
     "watch:stylus": "stylus --watch stylus/ --out build/styles",
     "watch": "parallelshell 'npm run watch:jade' 'npm run watch:stylus'",
     "server": "node server.js",
