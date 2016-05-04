@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Inconsolata;
+  font-style: normal;
+  src: url("/fonts/inconsolata.woff");
+}
 .flex {
   display: flex;
 }
@@ -96,4 +101,17 @@ body {
   min-height: 100%;
   padding: 0;
   margin: 0;
+  font-family: Inconsolata;
+  overflow: hidden;
+}
+.main-content {
+  overflow-y: auto;
+}
+.main-content > div {
+  flex-basis: 960px;
+  padding: 0 10px;
+}
+body > header,
+body > footer {
+  padding: 5px;
 }
