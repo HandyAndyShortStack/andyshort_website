@@ -1,1 +1,39 @@
 extend ./templates/application.pug
+
+block main_content
+
+  .index-page-content
+
+    .content-group
+      h2 Art
+      ul
+        li
+          a(href="art/animated.html") Animated
+          .blurb Images with intense pulsing colors
+        li 
+          a(href="art/static.html") Static
+          .blurb Ditigal glitch art
+
+    .content-group
+      h2 Games
+      ul
+        li
+          a(href="http://rgb.mobi") RGB
+          .blurb
+            | Use swipe gestures to align colored circles.  Click 
+            a(href="http://graph.rgb.mobi") here
+            |  to see a graph visualization of all possible positions, 
+            | accounting for reflectional, rotational, and colorway symmetry.
+
+    .content-group
+      h2 Music
+      ul
+        li
+          a(href="http://thefabulouspartyboys.com") The Fabulous Party Boys
+          .blurb I play the guitar in this silly funk band.
+        li
+          a(href="http://howshortjazz.com") How Short
+          .blurb
+            | I like to sing old songs in harmony with my friend 
+            a(href="https://penguinlinguist.wordpress.com/") Josh Hou
+            | .

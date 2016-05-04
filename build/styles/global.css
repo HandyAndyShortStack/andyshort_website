@@ -88,6 +88,6 @@
 .flex-12 {
   flex: 12;
 }
-ul.no-style {
+.index-page-content .content-group > ul {
   list-style: none;
 }
