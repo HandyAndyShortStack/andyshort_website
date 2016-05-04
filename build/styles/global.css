@@ -91,3 +91,9 @@
 .index-page-content .content-group > ul {
   list-style: none;
 }
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}

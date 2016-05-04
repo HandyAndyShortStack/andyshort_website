@@ -11,7 +11,7 @@
     "cowsay": "latest"
   },
   "scripts": {
-    "watch:pug": "pug --hierarchy --watch pug/ --out build/",
+    "watch:pug": "pug --hierarchy --watch pug/ --pretty --out build/",
     "watch:stylus": "stylus --watch stylus/ --out build/styles",
     "watch": "parallelshell 'npm run watch:pug' 'npm run watch:stylus'",
     "server": "node server.js",

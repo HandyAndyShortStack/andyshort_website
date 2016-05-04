@@ -1,8 +1,10 @@
 html
   include ../includes/head.pug
-  body
+  body.flex-column
     include ../includes/header.pug
     
-    section.main-content
+    section.main-content.flex-1
       block main_content
         // main content
+
+    include ../includes/footer.pug
