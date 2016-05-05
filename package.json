@@ -8,12 +8,15 @@
     "stylus": "latest",
     "parallelshell": "latest",
     "node-static": "latest",
-    "cowsay": "latest"
+    "cowsay": "latest",
+    "watch": "latest",
+    "gm": "latest"
   },
   "scripts": {
     "watch:pug": "pug --hierarchy --watch pug/ --pretty --out build/",
     "watch:stylus": "stylus --watch stylus/ --out build/styles",
-    "watch": "parallelshell 'npm run watch:pug' 'npm run watch:stylus'",
+    "watch:images": "node ./scripts/version_images.js",
+    "watch": "parallelshell 'npm run watch:pug' 'npm run watch:stylus' 'npm run watch:images'",
     "server": "node server.js",
     "dev": "parallelshell 'npm run watch' 'npm run server'"
   },
