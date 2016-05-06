@@ -2,5 +2,23 @@ extend ../templates/application.pug
 
 block main_content
 
-  div
-    h1 hello there
+  .animated-images
+
+    h2 Animated Images
+
+    .page-description
+      p
+        | These images document my fascination with the intensity of color 
+        | that is possible on modern backlit screens.  
+        | My intention is to use as much color and 
+        | contrast as the screen will allow.  
+        | All colors are at maximum hue and saturation on the hsv range.  
+        | I animate them by generating each frame as an svg file using 
+        | node scripts.  The vector images are rasterized and stitched into 
+        | animated gifs by imagemagick.  
+        | Click on these thumbnails to see higher resolution images.  
+
+    include ../includes/art/animated/tyson.pug
+    include ../includes/art/animated/fpb.pug
+    include ../includes/art/animated/martin.pug
+    include ../includes/art/animated/light_bulb.pug

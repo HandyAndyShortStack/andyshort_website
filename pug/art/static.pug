@@ -1,0 +1,15 @@
+extend ../templates/application.pug
+
+block main_content
+
+  .static-images
+
+    h2 Static Images
+
+    .page-description
+      | These are a couple of images that I produced accidentally while doing 
+      | some calculations.  They seem visually pleasing enough to call art.
+      | Click on these thumbnails to see the full resolution images.
+
+    include ../includes/art/static/waves.pug
+    include ../includes/art/static/spiral.pug

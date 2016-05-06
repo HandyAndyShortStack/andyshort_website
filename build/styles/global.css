@@ -96,6 +96,14 @@
 .index-page-content .content-group > ul {
   list-style: none;
 }
+.image {
+  margin-top: 50px;
+}
+.image img {
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+}
 html,
 body {
   min-height: 100%;
