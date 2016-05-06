@@ -2,7 +2,7 @@ var watch = require('watch');
 var gm = require('gm');
 var fs = require('fs');
 
-watch.watchTree('./images', function(f, curr, prev) {
+watch.watchTree('./images/in', function(f, curr, prev) {
   if (typeof f == "object" && prev === null && curr === null) {
       // Finished walking the tree
       return;
@@ -17,15 +17,16 @@ watch.watchTree('./images', function(f, curr, prev) {
     }
 });
 
-function version(path) {
-  console.log('versioning ' + path);
+function version(inPath) {
   var re = RegExp('\.[^\.]+$');
-  var extention = path.match(re)[0];
-  var buildPath = 'build/' + path;
-  var smallPath = buildPath.replace(re, '') + '_small' + extention;
-  fs.createReadStream(path).pipe(fs.createWriteStream(buildPath));
-  gm(path).resize(600, 600).write(smallPath, function(err) {
+  var extention = inPath.match(re)[0];
+  if (!extention) return; // inPath is a directory
+  console.log('versioning ' + inPath);
+  var outPath = inPath.replace(/^images\/in/, 'images/out');
+  fs.createReadStream(inPath).pipe(fs.createWriteStream(outPath));
+  var smallPath = outPath.replace(re, '') + '_small' + extention;
+  gm(inPath).resize(600, 600).write(smallPath, function(err) {
     if (err) return console.log(err);
-    console.log('finished versioning ' + path);
+    console.log('finished versioning ' + inPath);
   });  
 }
