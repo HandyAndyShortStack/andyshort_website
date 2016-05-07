@@ -16,7 +16,7 @@
 
   var svg = d3.select('#fretboard')
       .append('svg')
-      .attr('viewbox', '0 0 ' + outerWidth + ' ' + outerHeight)
+      .attr('viewBox', '0 0 ' + outerWidth + ' ' + outerHeight)
       .attr('preserveAspectRatio', 'xMidYMin slice')
       .attr('width', '100%')
       .style('padding-bottom', '100%')
