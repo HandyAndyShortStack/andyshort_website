@@ -12,14 +12,14 @@
   var dotDistance = 20;
   var dotWidth = 2;
   var doubleDotSpacing = 6;
-  var sampleRate = 10000;
+  var sampleRate = 100;
 
   var svg = d3.select('#fretboard')
       .append('svg')
       .attr('viewBox', '0 0 ' + outerWidth + ' ' + outerHeight)
       .attr('preserveAspectRatio', 'xMidYMin slice')
       .attr('width', '100%')
-      .style('padding-bottom', '100%')
+      .style('padding-bottom', '75%')
       .style('height', '1px')
       .style('overflow', 'visible')
     .append('g')
